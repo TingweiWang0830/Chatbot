@@ -35,4 +35,39 @@ A local AI-powered chatbot that allows you to query and interact with your PDF d
 git clone https://github.com/your-username/chat-with-pdf-LLM.git
 cd chat-with-pdf-LLM
 
+```
+### 2. Install Requirements
+```bash
+pip install -r requirements.txt
+
+```
+### 3. Pull Ollama Models (optional)
+```bash
+ollama pull Malicus7862/deepseekcoder-6.7b-jarvis-gguf
+ollama pull mxbai-embed-large
+
+```
+### 4. Launch App
+-For Ollama-based local models:
+```bash
+streamlit run chat_with_pdf_ollama_with_history.py
+```
+-For Gemini:
+```bash
+streamlit run chat_with_pdf_gemini.py
+```
+-For OpenAI:
+```bash
+streamlit run chat_with_pdf_openai.py
+
+```
+Use Cases:
+Academic paper analysis
+Legal contract review
+Business reports summarization
+Private file Q&A without uploading to cloud
+
+👤 Author
+Tingwei Wang
+🎓 M.S. in Information Systems, Johns Hopkins University
 
